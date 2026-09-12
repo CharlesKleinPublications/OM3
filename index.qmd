@@ -18,7 +18,7 @@ src="images/c-klein-0-monolithe-sur-nuages-avec-lune.jpg" class="cover-image"
 alt="Monolithe sur un ciel nocturne nuageux — Odyssée, Charles Klein"
 >
 <div class="cover-text">
-<h1>Odyssée ou Le monolithe</h1>
+<h1>Odyssée  ou Le monolithe</h1>
 <h2>Notre histoire commune</h2>
 <p>
 
