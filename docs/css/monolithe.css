@@ -359,6 +359,8 @@ opacity:.55;
 
 .text-content {
     width: min(680px, 72vw);
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
     font-family: "Literata", serif;
     color: #514b43;
