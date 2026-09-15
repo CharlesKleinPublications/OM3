@@ -12,34 +12,27 @@ format:
 <!-- =========================
      COUVERTURE
 ========================= -->
-<section class="cover page">
-<img
-src="images/c-klein-0-monolithe-sur-nuages-avec-lune.jpg" class="cover-image"
-alt="Monolithe sur un ciel nocturne nuageux — Odyssée, Charles Klein"
->
-<div class="cover-text">
-<h1>Odyssée  ou Le monolithe</h1>
-<h2>Notre histoire commune</h2>
-<p>
 
-</p>
-
-<a class="enter" href="#" onclick="next(); return false;">
-    Entrer →
-</a>
-
-</div>
-
-</section>
+::: {.cover-page .page}
+::: {.cover-content}
+# Odyssée
+## Le Monolithe
+:::
+::: {.language-choice}
+[FR]{#lang-fr-button}
+[·]{.language-separator}
+[EN]{#lang-en-button}
+:::
+:::
 
 
 <!-- =========================
      PAGE TEXTE INTRODUCTION
 ========================= -->
 ::: {.text-page .page}
+::: {.lang-fr}
 ::: {.text-content}
-
-## Une histoire, une odyssée, le monolithe
+## Le Monolithe
 
 C'est un récit photographique en 5 actes : le socle notre terre ; l’eau source de vie ;
 l’arbre, symbole de vie ; pensées et croyances de l'homme conscient ; les monolithes.
@@ -49,14 +42,14 @@ Oui, les monolithes, ces irréels d’aujourd’hui que j’ai voulus témoins d
 :::
 :::
 
-<!-- =========================
-     PAGE TEXTE le socle
-========================= -->
-::: {.text-page .page}
+::: {.lang-en}
 ::: {.text-content}
-## Le socle ....
+## The Monolith
 
-
+It remains there, silent, like a presence whose origin has been erased by time.
+Matter tells nothing. It preserves. Traces, cracks and surfaces carry a memory that does not ask to be deciphered.
+Before these motionless forms, the gaze slowly wanders. What seemed to be a stone becomes architecture, then landscape, then a fragment of memory.
+:::
 :::
 :::
 
@@ -65,11 +58,13 @@ Oui, les monolithes, ces irréels d’aujourd’hui que j’ai voulus témoins d
 ========================= -->
 <section class="photo-page page">
 <img src="images/c-klein-1-roche-falaise-trace.jpg"
-alt="Falaise avec trace d'une coulée — Odyssée, Charles Klein"
->
-<div class="caption">
-Le socle, substrat de nos possibles
-</div>
+alt="Falaise avec trace d'une coulée — Odyssée, Charles Klein">
+<div
+    class="caption"
+    data-fr="Le socle, substrat de nos possibles"
+    data-en="The ground beneath our possibilities">
+ </div>
+
 </section>
 
 <!-- =========================
@@ -79,9 +74,11 @@ Le socle, substrat de nos possibles
 <img src="images/c-klein-2-roches-enpilees.jpg"
 alt="Roches empilées — Odyssée, Charles Klein"
 >
-<div class="caption">
-Le socle, substrat de nos possibles
-</div>
+<div
+    class="caption"
+    data-fr="Le socle, substrat de nos possibles"
+    data-en="The ground beneath our possibilities">
+ </div>
 </section>
 
 <!-- =========================
@@ -91,9 +88,11 @@ Le socle, substrat de nos possibles
 <img src="images/charles -klein-3-passage-dans-rochers.jpg"
 alt="Roche avec passage — Odyssée, Charles Klein"
 >
-<div class="caption">
-Le socle, substrat de nos possibles
-</div>
+<div
+    class="caption"
+    data-fr="Le socle, substrat de nos possibles"
+    data-en="The ground beneath our possibilities">
+ </div>
 </section>
 
 <!-- =========================
@@ -103,25 +102,36 @@ Le socle, substrat de nos possibles
 <img src="images/c-klein-4-roche-face.jpg"
 alt="Roche de face - Comme un tableau - Odyssée, Charles Klein"
 >
-<div class="caption">
-Le socle, substrat de nos possibles
-</div>
+<div
+    class="caption"
+    data-fr="Le socle, substrat de nos possibles"
+    data-en="The ground beneath our possibilities">
+ </div>
 </section>
 
 <!-- =========================
      PAGE TEXTE Eau
 ========================= -->
-
 ::: {.text-page .page}
+::: {.lang-fr}
 ::: {.text-content}
+## Eau
 
-## ... Eau ...
-D'abord, là où tout a commencé, l'océan.
-<br>
+D'abord, là où tout a commencé, l'océan.  
 Et puis, sources lacs et rivières.  
+Avec la pluie.  
 
-Avec la pluie.
+:::
+:::
 
+::: {.lang-en}
+::: {.text-content}
+## Water
+
+First, where it all began, the ocean.  
+Then, springs, lakes and rivers.  
+With the rain.  
+:::
 :::
 :::
 
@@ -132,9 +142,11 @@ Avec la pluie.
 <img src="images/c-klein-5-eau-nuit_lune.jpg"
 alt="Reflet de lune dans une eau sombre - Odyssée, Charles Klein"
 >
-<div class="caption">
-Eau
-</div>
+<div
+    class="caption"
+    data-fr="Eau"
+    data-en="Water">
+ </div>
 </section>
 
 <!-- =========================
@@ -144,9 +156,11 @@ Eau
 <img src="images/c-klein-6-cascade.jpg"
 alt="Eau vive, cascade - Odyssée, Charles Klein"
 >
-<div class="caption">
-Eau
-</div>
+<div
+    class="caption"
+    data-fr="Eau"
+    data-en="Water">
+ </div>
 </section>
 
 <!-- =========================
@@ -156,9 +170,11 @@ Eau
 <img src="images/c-klein-7-océan-rivage.jpg"
 alt="Eau, océan, rivage, plage - Odyssée, Charles Klein"
 >
-<div class="caption">
-Eau
-</div>
+<div
+    class="caption"
+    data-fr="Eau"
+    data-en="Water">
+ </div>
 </section>
 
 <!-- =========================
@@ -168,22 +184,29 @@ Eau
 <img src="images/c-klein-8-rocher-océan.jpg"
 alt="Rocher dans l'océan - Odyssée, Charles Klein"
 >
-<div class="caption">
-Le rocher dans l'océan
-</div>
+<div
+    class="caption"
+    data-fr="Le rocher dans l'océan"
+    data-en="The rock in the ocean">
+ </div>
 </section>
 
 <!-- =========================
      PAGE TEXTE Arbre
 ========================= -->
-
 ::: {.text-page .page}
+::: {.lang-fr}
 ::: {.text-content}
-
 ## ... Arbre de vie ...
 
-<br>
+:::
+:::
 
+::: {.lang-en}
+::: {.text-content}
+## ... Tree of life ...
+
+:::
 :::
 :::
 
@@ -194,9 +217,11 @@ Le rocher dans l'océan
 <img src="images/c-klein-9-roche-fissure-naissance-vegetal.jpg"
 alt="Naissance - Germination dans la roche - Odyssée, Charles Klein"
 >
-<div class="caption">
-Germination dans la roche
-</div>
+<div
+    class="caption"
+    data-fr="Germination dans la roche"
+    data-en="Germination in the rock">
+ </div>
 </section>
 
 <!-- =========================
@@ -206,9 +231,11 @@ Germination dans la roche
 <img src="images/c-klein-10-herbes-ciel.jpg"
 alt="L'herbe avant l'arbre - Odyssée, Charles Klein"
 >
-<div class="caption">
-L'Herbe avant l'arbre
-</div>
+<div
+    class="caption"
+    data-fr="L'Herbe avant l'arbre"
+    data-en="Grass before the tree">
+ </div>
 </section>
 
 <!-- =========================
@@ -218,9 +245,11 @@ L'Herbe avant l'arbre
 <img src="images/c-klein-11-arbre-seul-ciel.jpg"
 alt="Arbre - Odyssée, Charles Klein"
 >
-<div class="caption">
-L'arbre
-</div>
+<div
+    class="caption"
+    data-fr="L'arbre"
+    data-en="The tree">
+ </div>
 </section>
 
 <!-- =========================
@@ -230,9 +259,11 @@ L'arbre
 <img src="images/c-klein-13-roche-et-arbres.jpg"
 alt="Rocher et arbres - Odyssée, Charles Klein"
 >
-<div class="caption">
-Arbres et Rocher
-</div>
+<div
+    class="caption"
+    data-fr="Arbres et rocher"
+    data-en="Trees and rock">
+ </div>
 </section>
 
 <!-- =========================
@@ -242,9 +273,11 @@ Arbres et Rocher
 <img src="images/c-klein-12-forêt.jpg"
 alt="La forêt comme apothéose - Odyssée, Charles Klein"
 >
-<div class="caption">
-La forêt comme apothéose
-</div>
+<div
+    class="caption"
+    data-fr="La forêt comme apothéose"
+    data-en="The forest as apotheosis">
+ </div>
 </section>
 
 <!-- =========================
@@ -254,22 +287,29 @@ La forêt comme apothéose
 <img src="images/c-klein-14-arbre-mort.jpg"
 alt="Déclin, mort de l'arbre - Odyssée, Charles Klein"
 >
-<div class="caption">
-Retour à la terre
-</div>
+<div
+    class="caption"
+    data-fr="Retour à la terre"
+    data-en="Return to the earth">
+ </div>
 </section>
 
 <!-- =========================
      PAGE TEXTE Croyances
 ========================= -->
-
 ::: {.text-page .page}
+::: {.lang-fr}
 ::: {.text-content}
+## Coyances ...
 
-## Croyances ...
+:::
+:::
 
-<br>
+::: {.lang-en}
+::: {.text-content}
+## Beliefs ...
 
+:::
 :::
 :::
 
@@ -280,9 +320,11 @@ Retour à la terre
 <img src="images/c-klein-15-chevaux_gravure_magdalénien.jpg"
 alt="Préhistoire, magdalénien, chevaux - Odyssée, Charles Klein"
 >
-<div class="caption">
-Magdalénien, la roche comme support
-</div>
+<div
+    class="caption"
+    data-fr="Magdalénien, la roche comme support"
+    data-en="Magdalénien, the rock as a medium">
+ </div>
 </section>
 
 
@@ -293,9 +335,11 @@ Magdalénien, la roche comme support
 <img src="images/c-klein-16-dolmen.jpg"
 alt="Dolmen- Celtes - Odyssée, Charles Klein"
 >
-<div class="caption">
-Néolithique, le rocher devient mégalithe
-</div>
+<div
+    class="caption"
+    data-fr="Néolithique, le rocher devient mégalithe"
+    data-en="Néolithique, the rock becomes a megalith">
+ </div>
 </section>
 
 
@@ -306,9 +350,11 @@ Néolithique, le rocher devient mégalithe
 <img src="images/c-klein-17-tombe-arbre.jpg"
 alt="Moyen Age, arbre, stèles granitiques"
 >
-<div class="caption">
-Moyen Age, arbre et stèles granitiques
-</div>
+<div
+    class="caption"
+    data-fr="Moyen Age, arbre et stèles granitiques"
+    data-en="Middle Ages, tree and granite steles">
+ </div>
 </section>
 
 <!-- =========================
@@ -318,25 +364,31 @@ Moyen Age, arbre et stèles granitiques
 <img src="images/c-klein-18-art-roman.jpg"
 alt="Art roman, Christ et diable"
 >
-<div class="caption">
-Art roman, Christ et diable dans le grès
-</div>
+<div
+    class="caption"
+    data-fr="Art roman, Christ et diable dans le grès"
+    data-en="Romanesque art, Christ and devil in sandstone">
+ </div>
 </section>
 
 <!-- =========================
      PAGE TEXTE Monolithe
 ========================= -->
-
 ::: {.text-page .page}
+::: {.lang-fr}
 ::: {.text-content}
-
-## Le monolithe ...
-
-<br>
+## Le Monolithe
 
 :::
 :::
 
+::: {.lang-en}
+::: {.text-content}
+## The Monolith
+
+:::
+:::
+:::
 <!-- =========================
      PHOTOGRAPHIE S19
 ========================= -->
@@ -344,9 +396,11 @@ Art roman, Christ et diable dans le grès
 <img src="images/c-klein-19-monolithe-montagne.jpg"
 alt="Le monolithe - Montagne - Odyssée, Charles Klein"
 >
-<div class="caption">
-Le monolithe
-</div>
+<div
+    class="caption"
+    data-fr="Le monolithe"
+    data-en="The monolith">
+ </div>
 </section>
 
 
@@ -357,9 +411,11 @@ Le monolithe
 <img src="images/c-klein-20-monolithe-oiseaux.jpg"
 alt="Le monolithe - Oiseaux - Odyssée, Charles Klein"
 >
-<div class="caption">
-Le monolithe
-</div>
+<div
+    class="caption"
+    data-fr="Le monolithe"
+    data-en="The monolith">
+ </div>
 </section>
 
 
@@ -370,9 +426,11 @@ Le monolithe
 <img src="images/c-klein-21-monolithe-arbres-morts.jpg"
 alt="Le monolithe - Arbres morts - Odyssée, Charles Klein"
 >
-<div class="caption">
-Le monolithe
-</div>
+<div
+    class="caption"
+    data-fr="Le monolithe"
+    data-en="The monolith">
+ </div>
 </section>
 
 <!-- =========================
@@ -382,9 +440,11 @@ Le monolithe
 <img src="images/c-klein-22-monolithe-dolmen-lune.jpg"
 alt="Le monolithe - Dolmen avec lune - Odyssée, Charles Klein"
 >
-<div class="caption">
-Le monolithe
-</div>
+<div
+    class="caption"
+    data-fr="Le monolithe"
+    data-en="The monolith">
+ </div>
 </section>
 
 <!-- =========================
@@ -394,27 +454,33 @@ Le monolithe
 <img src="images/c-klein-23-monolithe-nuit-lune.jpg"
 alt="Le monolithe - Nuit avec lune - Odyssée, Charles Klein"
 >
-<div class="caption">
-Le monolithe
-</div>
+<div
+    class="caption"
+    data-fr="Le monolithe"
+    data-en="The monolith">
+ </div>
 </section>
 
 <!-- =========================
      PAGE DE FIN
 ========================= -->
-
 ::: {.text-page .page}
-
+::: {.lang-fr}
 ::: {.text-content}
-
 ### Charles Klein — Tous droits réservés
-
 [charlesklein.photos](https://charlesklein.photos/fr/accueil){target="_blank"}
 
 :::
-
 :::
 
+::: {.lang-en}
+::: {.text-content}
+### Charles Klein — All rights reserved
+[charlesklein.photos](https://charlesklein.photos/en/home){target="_blank"}
+
+:::
+:::
+:::
 
 <!-- =========================
      FIN DU LIVRE

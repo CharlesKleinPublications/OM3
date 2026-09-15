@@ -1,9 +1,10 @@
 // =========================================
-// Navigation du livre
+// Navigation du livre + gestion des langues
 // =========================================
 
 let pages = [];
 let current = 0;
+let currentLanguage = "fr";
 
 // -----------------------------------------
 // Initialisation
@@ -12,6 +13,15 @@ let current = 0;
 window.addEventListener("DOMContentLoaded", () => {
 
     pages = [...document.querySelectorAll(".page")];
+
+    // Récupère la langue mémorisée
+    const savedLanguage = localStorage.getItem("zineLanguage");
+
+    if (savedLanguage === "fr" || savedLanguage === "en") {
+        currentLanguage = savedLanguage;
+    }
+
+    setLanguage(currentLanguage);
 
     showPage(0);
 
@@ -26,7 +36,58 @@ window.addEventListener("DOMContentLoaded", () => {
         right.addEventListener("click", next);
     }
 
+    // Boutons de langue
+    const frButton = document.getElementById("lang-fr-button");
+    const enButton = document.getElementById("lang-en-button");
+
+    if (frButton) {
+        frButton.addEventListener("click", () => {
+            setLanguage("fr");
+            next();
+        });
+    }
+
+    if (enButton) {
+        enButton.addEventListener("click", () => {
+            setLanguage("en");
+            next();
+        });
+    }
+
 });
+
+// -----------------------------------------
+// Gestion de la langue
+// -----------------------------------------
+
+function setLanguage(language) {
+
+    if (language !== "fr" && language !== "en") {
+        language = "fr";
+    }
+
+    currentLanguage = language;
+
+    // Mémorisation du choix
+    localStorage.setItem("zineLanguage", language);
+
+    // Affichage des éléments correspondant à la langue
+    document.querySelectorAll(".lang-fr").forEach(element => {
+        element.style.display = (language === "fr") ? "" : "none";
+    });
+
+    document.querySelectorAll(".lang-en").forEach(element => {
+        element.style.display = (language === "en") ? "" : "none";
+    });
+
+    // Textes bilingues définis avec data-fr / data-en
+    document.querySelectorAll("[data-fr][data-en]").forEach(element => {
+
+        element.textContent = element.getAttribute("data-" + language);
+
+    });
+
+}
 
 // -----------------------------------------
 // Affichage d'une page
