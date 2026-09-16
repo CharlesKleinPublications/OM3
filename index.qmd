@@ -15,8 +15,8 @@ format:
 
 ::: {.cover-page .page}
 ::: {.cover-content}
-# Odyssée
-## Le Monolithe
+## Odyssée
+### Le Monolithe
 :::
 ::: {.language-choice}
 [FR]{#lang-fr-button}
